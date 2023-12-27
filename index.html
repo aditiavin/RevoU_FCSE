@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <h1>Hello World!</h1>
+        <h2>Ini heading 2</h2>
+        <!--Hanya boleh ada 1 heading 1 di setiap webpage-->
+        <!--Heading digunakan untuk judul-->
+
+        <p>Ini paragraf 1</p>
+        <p>Ini paragraf 2</p>
+
+        <hr>
+        Ini baris 1
+        <br>
+        Ini baris 2
+
+        <!--ini komentar-->
+
+        <!--Text styling-->
+        <p><b>Ini bold</b></p>
+        <p><i>Ini italic</i></p>
+
+        <!--List: orderd list (ol) dan unordered list (ul)-->
+        <ol type="I">
+            <li>Satu</li>
+            <li>Dua</li>
+            <li>Tiga</li>
+            <ol type="i">
+                <li>Tiga titik satu</li>
+                <li>Tiga titik dua</li>
+            </ol>
+        </ol>
+        
+        <ul>
+            <li>Satu</li>
+            <li>Dua</li>
+            <li>Tiga</li>
+        </ul>
+
+        <!--Table: ada table row (tr) dan table division (td)-->
+        <!--Secara default belum ada border, perlu styling CSS-->
+        <table>
+            <tr>
+                <th colspan="3">Company Profile</th>
+                <!--colspan untuk memanjangkan kolom-->
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Wawan</td>
+                <td>Sinar Abadi</td>
+                <td>Indonesia</td>
+            </tr>
+            <tr>
+                <td>Alexis</td>
+                <td>Alex Consulting</td>
+                <td>Italy</td>
+            </tr>
+        </table>
+
+        <!--Image-->
+        <img src="" alt="Gambar pemandangan">
+        <br>
+
+        <!--Link-->
+        <p>
+            <a href="www.google.com" target="_blank">Link Google</a>
+        </p>
+
+        <!--ID Link-->
+        <a href="#cari aku">Cari aku</a>
+
+        <p>Kau</p>
+        <p>Kau</p>
+        <p>Kau</p>
+        <p id="cari aku">Aku</p>
+        <p>Kau</p>
+        <p>Kau</p>
+
+        <!--Form-->
+        <form>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </form>
+
+        <!--Button-->
+        <button>Click me</button>
+
+        <!--Radio Button-->
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+
+        <!--Field Sets-->
+        <fieldset>
+            <legend>Data Diri</legend>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input type="text" name="age">
+            </p>
+        </fieldset>
+    </body>
+</html>
