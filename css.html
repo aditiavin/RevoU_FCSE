@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+
+        <style>
+            a[target]{
+                background-color: yellow;
+            }
+            h2{
+                color: blue;
+            }
+            
+            p{
+                color: brown;
+            }
+            
+            .mobil{
+                color: green;
+            }
+
+            #gradient{
+                width: 100px;
+                height: 100px;
+                background: linear-gradient(lightblue,yellow);
+            }
+
+            #bgimg{
+                width: 100px;
+                height: 100px;
+                background-image: url();
+            }
+
+            #font{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-weight: bolder;
+                text-transform: capitalize;
+                letter-spacing: 5px;
+                text-shadow: 2px;
+                text-decoration: line-through;
+            }
+
+            .container{
+                height: 200px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .container div{
+                width: 50px;
+                padding: 10px;
+                text-align: center;
+                font-size: 14px;
+                color: white;
+                border: 2px solid;
+                border-radius: 10px;
+                background-color: navy;
+            }
+
+            .grid{
+                display: grid;
+                grid-template-columns: 70px 70px 70px;
+                grid-gap: 10px;
+            }
+
+            .box{
+                background-color: #444;
+                color: #fff;
+                border-radius: 10px;
+                padding: 20px;
+                font-size: 150%;
+                text-align: center;
+            }
+        </style>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <h1 style="color: red;">Ini pake inline CSS</h1>
+        <h2>Ini pake internal CSS</h2>
+        <h3>Ini pake eksternal CSS</h3>
+        <!--Urutan hierarkinya inline > internal > external-->
+
+        <!--CSS Selector-->
+        <h2>Halo</h4>
+        <p>Hai</p>
+        <p class="mobil" id="avanza">Ini avanza</p>
+        <p class="mobil" id="ayla">Ini ayla</p>
+        <!--Urutannya id > class > tag-->
+
+        <!--Attribute Selector-->
+        <a href="https://www.twitter.com">Twitter</a> <br>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        
+        <!--Background color-->
+        <div id="gradient"></div>
+        <div id="bgimage"></div>
+
+        <!--Font & Text-->
+        <p id="font">good morning</p>
+
+        <!--Flex Box-->
+        <nav class="container">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+
+        <!--CSS Grid-->
+        <div class="grid">
+            <div class="box a">A</div>
+            <div class="box b">B</div>
+            <div class="box c">C</div>
+            <div class="box d">D</div>
+            <div class="box e">E</div>
+            <div class="box f">F</div>
+        </div>
+    </body>
+</html>
