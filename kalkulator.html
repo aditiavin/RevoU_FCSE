@@ -5,7 +5,34 @@
     <!--styling agar lebar button sama dengan lebar kolom-->
     <style>
         button{
-            width: 100%
+            width: 100%;
+            border: none;
+            background-color: lightgrey;
+            border-radius: 5px;
+        }
+
+        .red{
+            background-color: red;
+            color: white;
+        }
+
+        .blue{
+            background-color: blue;
+            color: white;
+        }
+
+        .operator{
+            background-color: orange;
+        }
+
+        .green{
+            background-color: green;
+            color: white;
+        }
+
+        .modifier{
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -19,13 +46,13 @@
         </tr>
         <tr>
             <td colspan="2">
-                <button>AC</button>
+                <button class="red">AC</button>
             </td>
             <td>
-                <button>C</button>
+                <button class="blue">C</button>
             </td>
             <td>
-                <button>*</button>
+                <button class="operator">*</button>
             </td>
         </tr>
         
@@ -40,7 +67,7 @@
                 <button>9</button>
             </td>
             <td>
-                <button>/</button>
+                <button class="operator">/</button>
             </td>
         </tr>
         
@@ -55,7 +82,7 @@
                 <button>6</button>
             </td>
             <td>
-                <button>+</button>
+                <button class="operator">+</button>
             </td>
         </tr>
         
@@ -70,22 +97,22 @@
                 <button>3</button>
             </td>
             <td>
-                <button>-</button>
+                <button class="operator">-</button>
             </td>
         </tr>
         
         <tr>
             <td>
-                <button>+-</button>
+                <button class="modifier">+-</button>
             </td>
             <td>
                 <button>0</button>
             </td>
             <td>
-                <button>.</button>
+                <button class="modifier">.</button>
             </td>
             <td>
-                <button>=</button>
+                <button class="green">=</button>
             </td>
         </tr>
     </table>
